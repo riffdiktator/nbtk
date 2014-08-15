@@ -6,6 +6,7 @@ module.exports = function(grunt){
     grunt.config('connect',{
         server: {
             options: {
+                hostname: 'localhost',
                 port: 8888,
                 base: 'app',
                 open: true,

@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   border-bottom: 1px #000 solid;
+  border-top: 1px #000 solid;
 }
 .site-nav__item {
   float: left;
@@ -20,6 +21,7 @@
     display: inline-block;
 
     &:hover {
+      text-decoration: none;
       background: #fff;
       color: #000;
     }
