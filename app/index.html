@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>NBTK</title>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div ng-controller="NavigationController" class="site-header">
+      <div class="wrapper">
+        <ul class="site-nav">
+          <li ng-repeat="link in navigation" class="site-nav__item"><a href="{{ link.url }}">{{ link.text }}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="content">
+        <div ng-view></div>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

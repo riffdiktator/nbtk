@@ -1,0 +1,8 @@
+{
+    "name": "nie-bede-tu-kupowal-api",
+    "version": "0.0.1",
+    "description" : "API dla strony",
+    "dependencies": {
+        "express": "3.x"
+    }
+}

@@ -1,0 +1,16 @@
+doctype html
+html(ng-app="app")
+	head
+		title NBTK
+		meta(charset="utf-8")
+		link(href="css/styles.css", rel="stylesheet")
+	body
+		.site-header(ng-controller="NavigationController")
+			.wrapper
+				ul.site-nav
+					li.site-nav__item(ng-repeat="link in navigation")
+						a(href="{{ link.url }}") {{ link.text }}
+		.wrapper
+			.content
+				div(ng-view)
+		script(src="js/scripts.js")
